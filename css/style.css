@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f9f9f9;
+  --para: #c0c0c0;
+  --helper: #0063e5;
+  --bg: #040714;
+}
+html {
+  font-size: 70%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h1,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: var(--heading);
+  font-size: 6rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+p {
+  color: var(--para);
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+a {
+  text-decoration: none;
+  color: var(--para);
+}
+li {
+  list-style: none;
+}
+
+/*<<<============================================================
+                     Utility Classes Star                   
+==============================================================>>>*/
+
+.section {
+  padding-block: 9rem;
+}
+.container {
+  width: min(144rem, 100% - 8rem);
+  margin-inline: auto;
+}
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-four-column {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.common-heading {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 6rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+/* ======= Button ========  */
+.btn {
+  display: inline-block;
+  padding: 2.25rem 7.5rem;
+  border-radius: 0.4rem;
+  background: var(--helper);
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* 1504px */
+@media (max-width: 94em) {
+  html {
+    font-size: 55%;
+  }
+}
+/* 980px */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+/* 780px */
+@media (max-width: 48.75em) {
+  .btn {
+    padding: 1.4rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+/* 560px */
+@media (max-width: 35em) {
+  html {
+    font-size: 50.5%;
+  }
+}
+
+/*<<<==============================================================
+                     Header Section Star                   
+===============================================================>>>*/
+
+nav {
+  height: 10rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header .navbar a {
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 1.6rem 1.7rem;
+  border: 1px solid #adadad;
+  border-radius: 4px;
+}
+
+header {
+  background-color: var(--bg);
+  background-image: url("../images/Background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 67.5rem;
+}
+
+.hero-buttons {
+  display: inline-flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-data-section {
+  display: grid;
+  gap: 3rem;
+}
+.hero-data {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+}
+.hero-data p:nth-child(1) {
+  font-size: 1.6rem;
+}
+.hero-data p:nth-child(2) {
+  font-size: 1.2rem;
+}
+.hero-data p:nth-child(2) a {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.hero-data a {
+  font-size: 2rem;
+}
+
+/* 780px */
+@media (max-width: 48.75em) {
+  header .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  header img {
+    max-width: 100%;
+  }
+  header .navbar a {
+    padding: 1.4rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+/* 400px */
+@media (max-width: 25em) {
+  .hero-buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+  }
+}
+
+/*<<<=========================================================
+                     portfolio Section Star                   
+===========================================================>>>*/
+.portfolio-section {
+  background-color: var(--bg);
+  /* padding-top: 0; */
+  /* height: 72rem; */
+}
+.portfolio-images img {
+  width: 100%;
+}
+.p-btn:first-child {
+  border-bottom: 2px solid white;
+}
+.p-btns {
+  margin-bottom: 3.6rem;
+  display: flex;
+  gap: 2.18rem;
+  align-items: center;
+  justify-content: center;
+}
+.p-btn {
+  font-size: 2rem;
+}
+
+/* 780px */
+@media (max-width: 48.75em) {
+  .portfolio-section .grid-three-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 480 */
+@media (max-width: 30em) {
+  .portfolio-section .grid-three-column {
+    grid-template-columns: 1fr;
+  }
+  .p-btn {
+    font-size: 1.2rem;
+  }
+}
+
+/*<<<=========================================================
+                     Prising Section Star                   
+===========================================================>>>*/
+
+.prising-section {
+  text-align: center;
+  background: var(--bg);
+  color: var(--white);
+  padding-inline: 5.4rem;
+}
+.prising-section .container {
+  width: min(144rem, 100% - 13.4rem);
+}
+
+.prising-section h2 {
+  font-size: 4.3rem;
+  line-height: 5.4rem;
+  padding-bottom: 2.6rem;
+}
+.prising-section h2 + p {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+  color: var(--para);
+}
+
+.prising-section .toggle-plan {
+  display: inline-flex;
+  background-color: #2b2d37;
+  border-radius: 2.1rem;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  margin: 2.6rem;
+}
+.prising-section .toggle-plan .plan-btn {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  border: none;
+  background: none;
+  color: var(--white);
+}
+.prising-section .toggle-plan .plan-btn:first-child {
+  background-color: var(--helper);
+  padding: 0.5rem 1.6rem;
+  border-radius: 1.9rem;
+  margin-right: 1.6rem;
+}
+.prising-section .plans {
+  text-align: start;
+  gap: 2.4rem;
+}
+.prising-section .plans .plan {
+  display: flex;
+  flex-direction: column;
+  gap: 5.4rem;
+  border: 1.5px solid var(--para);
+  padding: 4.1rem 4.5rem;
+}
+.prising-section .plans .plan .block-a {
+  display: flex;
+  flex-direction: column;
+}
+.prising-section .block-a img {
+  width: auto;
+}
+.prising-section .plans .plan .block-a h3 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-top: 2.7rem;
+  padding-bottom: 0.6rem;
+}
+
+.plan-info {
+  display: flex;
+  gap: 1.6rem;
+  padding-top: 1.7rem;
+}
+.plan-info i {
+  padding-top: 1rem;
+}
+.prising-section .block-b button {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.prising-section .block-b .amount {
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+.prising-section .block-b span {
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+/* 780px */
+@media (max-width: 66.25em) {
+  .prising-section .grid-three-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .prising-section .container {
+    width: min(144rem, 100% - 1rem);
+  }
+}
+
+/* 640 */
+@media (max-width: 40em) {
+  .prising-section .grid-three-column {
+    grid-template-columns: 1fr;
+  }
+  .prising-section h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 2.7rem;
+    padding-bottom: 0.6rem;
+  }
+}
+
+/*<<<=========================================================
+feature Section Star                   
+===========================================================>>>*/
+
+.feature-section img {
+  width: 100%;
+}
+.feature-section .grid {
+  gap: 5rem;
+}
+.feature-section h3 {
+  color: var(--white);
+  font-size: 3.8rem;
+  padding-bottom: 3.5rem;
+}
+.feature-section .grid li {
+  font-size: 2rem;
+  list-style-type: disc;
+  padding-block: 1.2rem;
+  color: var(--para);
+}
+
+.feature-section {
+  background: var(--bg);
+  padding-inline: 5.4rem;
+}
+
+/* 960px */
+@media (max-width: 66.25em) {
+  .feature-section .grid-two-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*<<<=========================================================
+FAQ Section Star                   
+===========================================================>>>*/
+
+.faq-section {
+  background: var(--bg);
+}
+.faq-section h3 {
+  text-align: center;
+  color: var(--white);
+  font-size: 3.8rem;
+  font-weight: bold;
+  line-height: 5rem;
+  padding-bottom: 2.2rem;
+}
+.faq-section .question {
+  background: #13151d;
+  margin-bottom: 1.6rem;
+  padding: 2.4rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-section .question i {
+  color: var(--white);
+}
+.faq-section {
+  background: var(--bg);
+}
+
+/* 590 */
+@media (max-width: 37em) {
+  .faq-section h3 {
+    font-size: 2.55rem;
+  }
+}
+
+/*<<<=========================================================
+footer Section Star                   
+===========================================================>>>*/
+
+.footer-section {
+  background: var(--bg);
+  color: var(--para);
+  padding-block: 5rem;
+  text-align: center;
+}
+.footer-section nav {
+  height: auto;
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+}
+/* .footer-section img {
+  width: 30%;
+} */
+.footer-section nav ul {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  /* text-align: center; */
+  /* flex-direction: column; */
+}
+.footer-section p {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.2px;
+}
+.footer-section li {
+  text-wrap: nowrap;
+  word-spacing: 1.5px;
+}
+.footer-section a {
+  text-decoration: none;
+  display: flex;
+  gap: 0.6rem;
+}
+/* 590 */
+@media (max-width: 37em) {
+  .footer-section nav ul {
+    flex-wrap: wrap;
+    /* text-align: center; */
+  }
+  .footer-section nav ul li,
+  .footer-section p,
+  a {
+    font-size: 1.4rem;
+  }
+}

@@ -440,7 +440,8 @@ footer Section Star
 .footer-section {
   background: var(--bg);
   color: var(--para);
-  padding-block: 5rem;
+  padding-top: 0;
+  padding-bottom: 3rem;
   text-align: center;
 }
 .footer-section nav {
@@ -449,15 +450,10 @@ footer Section Star
   gap: 1.6rem;
   flex-direction: column;
 }
-/* .footer-section img {
-  width: 30%;
-} */
 .footer-section nav ul {
   display: flex;
   gap: 2.4rem;
   justify-content: center;
-  /* text-align: center; */
-  /* flex-direction: column; */
 }
 .footer-section p {
   font-size: 1.2rem;
@@ -474,10 +470,9 @@ footer Section Star
   gap: 0.6rem;
 }
 /* 590 */
-@media (max-width: 37em) {
+@media (max-width: 52em) {
   .footer-section nav ul {
     flex-wrap: wrap;
-    /* text-align: center; */
   }
   .footer-section nav ul li,
   .footer-section p,

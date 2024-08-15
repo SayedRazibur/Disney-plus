@@ -68,17 +68,6 @@ li {
 .grid-three-column {
   grid-template-columns: repeat(3, 1fr);
 }
-.grid-four-column {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.common-heading {
-  font-size: 4.8rem;
-  font-weight: 600;
-  margin-bottom: 6rem;
-  text-transform: capitalize;
-  position: relative;
-}
 
 /* ======= Button ========  */
 .btn {
@@ -108,6 +97,10 @@ li {
 }
 /* 780px */
 @media (max-width: 48.75em) {
+  .container {
+    width: min(144rem, 100% - 4rem);
+    margin-inline: auto;
+  }
   .btn {
     padding: 1.4rem 3rem;
     font-size: 1.5rem;
@@ -209,10 +202,9 @@ header {
 /*<<<=========================================================
                      portfolio Section Star                   
 ===========================================================>>>*/
+
 .portfolio-section {
   background-color: var(--bg);
-  /* padding-top: 0; */
-  /* height: 72rem; */
 }
 .portfolio-images img {
   width: 100%;
@@ -257,9 +249,6 @@ header {
   background: var(--bg);
   color: var(--white);
   padding-inline: 5.4rem;
-}
-.prising-section .container {
-  width: min(144rem, 100% - 13.4rem);
 }
 
 .prising-section h2 {
@@ -345,8 +334,8 @@ header {
   .prising-section .grid-three-column {
     grid-template-columns: repeat(2, 1fr);
   }
-  .prising-section .container {
-    width: min(144rem, 100% - 1rem);
+  .prising-section {
+    padding-inline: 0;
   }
 }
 
@@ -364,7 +353,7 @@ header {
 }
 
 /*<<<=========================================================
-feature Section Star                   
+                   feature Section Star                   
 ===========================================================>>>*/
 
 .feature-section img {
@@ -387,7 +376,6 @@ feature Section Star
 
 .feature-section {
   background: var(--bg);
-  padding-inline: 5.4rem;
 }
 
 /* 960px */
@@ -395,9 +383,17 @@ feature Section Star
   .feature-section .grid-two-column {
     grid-template-columns: repeat(1, 1fr);
   }
+  .feature-section h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .feature-section {
+    padding-inline: 1.5rem;
+  }
 }
+
 /*<<<=========================================================
-FAQ Section Star                   
+                      FAQ Section Star                   
 ===========================================================>>>*/
 
 .faq-section {
@@ -434,7 +430,7 @@ FAQ Section Star
 }
 
 /*<<<=========================================================
-footer Section Star                   
+                    footer Section Star                   
 ===========================================================>>>*/
 
 .footer-section {
